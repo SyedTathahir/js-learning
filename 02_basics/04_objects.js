@@ -63,3 +63,33 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));// not used much
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 console.log(tinderUser.hasOwnProperty('isLogged'));
+
+//++++++++++Object destructuring and JSON API ++++++++++++
+
+const course ={
+    coursename: "javscript",
+    price:"999",
+    course_instructor: "Syed"
+}
+
+// course.course_instructor
+
+const{course_instructor: instructor} = course
+
+// console.log(course_instructor);
+console.log(instructor);
+
+// JSON ={ it's basically objects without names
+// "name":"syed",
+// "coursename": "js",
+// "price": "free"
+//}
+
+// some times API comes in form of arrays []
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
+
