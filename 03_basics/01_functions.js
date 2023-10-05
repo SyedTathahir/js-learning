@@ -48,6 +48,39 @@ function loginUserMessage (username = "Sam") {
 }
 
 // console.log(loginUserMessage("Syed"))
-console.log(loginUserMessage(""))
-console.log(loginUserMessage())
-console.log(loginUserMessage("Syed"))// overriding the parameter 
+// console.log(loginUserMessage(""))
+// console.log(loginUserMessage())
+// console.log(loginUserMessage("Syed"))// overriding the parameter 
+
+
+function calculateCartPrice(val1, val2,...num1){// rest operator
+
+    return num1
+}
+//(...) both are rest operator and spread operator and depends on use case for calling it.
+
+// console.log(calculateCartPrice(62,400, 599 ,2000))
+
+const user = {
+    username: "Syed",
+    prices: 199
+}
+
+function handleObject (anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+// handleObject(user)
+
+handleObject({// passing objects as argumensts.
+    username: "Sunny",
+    price: 399
+})
+
+const myNewArray = [200,300,400,500]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue(myNewArray))
+console.log(returnSecondValue([4005,6654,908,899]))
