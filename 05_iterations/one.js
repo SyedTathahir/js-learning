@@ -15,10 +15,34 @@ for (let i=0 ; i <=10 ; i++){
 
 // }
 
-let myArray = ["Flash","Batman", "superman"]
+// let myArray = ["Flash","Batman", "superman"]
+// console.log(myArray.length);
+// for (let index = 0; index <=myArray.length; index++) {
+//     const element = myArray[index];
+//     console.log(element);
+// }
 
-for (let index = 0; index < myArray.length; index++) {
-    const element = myArray[index];
-    console.log(element);
+//break and continue:
+
+// for (let index = 0; index <= 20; index++) {
+//     if(index == 5){
+//         console.log(`Detected 5 `);
+//         break;
+//     }
+//     console.log(`value of index is ${index}`);
+    
+// }
+// console.log(`breaked the block after 5`);
+
+
+for (let index = 0; index <= 20; index++) {
+    if(index == 5){
+        console.log(`Detected 5 `);
+        continue;//it skip the value for one time and not breaks the loop
+    }
+    console.log(`value of index is ${index}`);
     
 }
+
+
+
