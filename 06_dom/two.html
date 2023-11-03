@@ -7,11 +7,32 @@
 </head>
 <body style="background-color: #212121; color:#ffff" >
     <div class="parent">
+        <!-- this is a comment -->
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
         <div class="day">Thursday</div>
     </div>
 </body>
-<script></script>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[0])
+    // console.log(parent.children[0].innerHTML)
+    // for(let i = 0 ; i<parent.children.length;i++){
+    //     console.log(parent.children[i].innerHTML);
+    // }
+    // parent.children[2].style.color = "orange"
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day');
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    console.log("NODES: ", parent.childNodes);
+
+</script>
 </html>
