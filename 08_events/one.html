@@ -7,9 +7,47 @@
 </head>
 <body>
     <div>
-   <ul> <li><img src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="owl"alt=""></li></ul></div>
+   <ul id = "images" >
+     <li><img src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="owl"alt=""></li>
+    <li><img src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" id="person"alt=""></li>
+    <li><a href="https://google.com" id="google" style="color: black ;"></a>Google</li>
+    </ul>
+    </div>
 </body>
 <script>
+    // document.getElementById('owl').addEventListener('click',function (e){
+    //     // alert("owl clicked again")
+    //     console.log(e);
+    // },false)
+    //type,timestamp,defaultPrevented
+    //target , toElement , srcElement , currentTarget,
+    // clientX,clienty, screenX, screenY
+    // altkey, crtlkey,shiftkey,keyCode
+    // document.getElementById('images').addEventListener('click',function (e){
+    //     console.log("Clicked inside the ul");
+    // },false)
+    // document.getElementById('owl').addEventListener('click',function (e){
+    //     console.log("Owl clicked");
+    //     e.stopPropagation()
+    // },false)
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("google clicked");
+        
+    // },false)
+        
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+                removeIt.remove()
+        }
+        
+        // removeIt.parentNode.removeChild(removeIt)
+    },false)
+
 
 </script>
 </html>
