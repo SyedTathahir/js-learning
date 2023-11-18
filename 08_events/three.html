@@ -18,11 +18,15 @@
     
     const intervalId = setInterval(sayDate,1000,"hi")
 
-    document.querySelector('#stop',function(e){
+    document.querySelector('#stop').addEventListener('click',function(e){
         clearInterval(intervalId)
         console.log("Stopped")
     })
     
+    document.querySelector('#start').addEventListener('click',function(e){
+        setInterval(sayDate,1000,"started again")
+        console.log("started")
+    })
 
 
 
