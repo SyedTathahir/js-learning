@@ -16,6 +16,13 @@
     const changeText = function(){
         document.querySelector('h1').innerHTML = "Js Series"
     }
-    setTimeout(changeText,2000);
+    const changeMe = setTimeout(changeText,2000);
+    
+    document.querySelector('#stop').addEventListener('click',function (e){
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+    })
+
+
 </script>
 </html>
