@@ -52,12 +52,12 @@ Object.setPrototypeOf(teachingSupport,Teacher);
 
 let anotherUsername = "Syed "
 
-String.prototype.trueLenght = function (){
+String.prototype.trueLength = function (){
     console.log(`${this}`);
     // console.log(`${this.name}`);
     console.log(`True lenght is ${this.trim().length}`);
 }
-anotherUsername.trueLenght()
+anotherUsername.trueLength()
 
-"syedtathahir".trueLenght()
-"coffeee".trueLenght()
+"syedtathahir".trueLength()
+"coffeee".trueLength()
