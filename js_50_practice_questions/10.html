@@ -6,11 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="paragraph">hello world </p>
-    <script >
-        const paragraph = document.getElementById('paragraph');
-
-paragraph.textContent = "hello syed"
+    <button id="button">Click Me </button>
+    
+    <script>
+        let button = document.querySelector("#button");
+        button.addEventListener('click',()=>{
+            alert("Button Clicked")
+        })
     </script>
 </body>
 
