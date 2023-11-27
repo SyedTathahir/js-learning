@@ -16,11 +16,16 @@ const fetchSlow = ()=>{
 console.log("program Starting");
 const firstTimestamp = new Date();
 const useData = async()=>{
-    const fastResult = await fetchFast();
+    const fastResult =  fetchFast();
     console.log(fastResult);
 
-    const slowResult = await fetchSlow();
+    const slowResult =  fetchSlow();
+
+    
+
     console.log(slowResult);
+    const result = await Promise.all([fastResult,slowResult])
+    console.log(result);
     
     const secondTimestamp = new Date ();
     const timeElapsed = secondTimestamp - firstTimestamp;
