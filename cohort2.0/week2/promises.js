@@ -20,5 +20,8 @@ function promisifymysettimeOut(duration ){
 const ans = promisifymysettimeOut(3000)
 console.log(ans);
 ans.then(function(){
-    console.log("hello promise")
+    console.log("hello promise");
+    promisifymysettimeOut(2000).then(()=>{// promise chaining.
+        console.log("hello second promise")
+    })
 })
