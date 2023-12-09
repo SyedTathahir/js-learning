@@ -6,9 +6,16 @@
 // console.log("After setTimeout");
 
 const fs = require("fs")
-
+function putname(cb){
 fs.readFile("a.txt","utf-8",(err,data)=>{
-    console.log(data);
+    data = data + "Hi syed"
+    fs.writeFile("a.txt", ()=>{
+        cb();
+    })
     
+})
+}
+putname(cb= ()=>{
+    console.log("name is written");
 })
 console.log("before file is read I got executed");
